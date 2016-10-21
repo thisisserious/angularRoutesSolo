@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="nextGenApp">
+
+<head>
+    <meta charset="utf-8">
+    <title>Star Trek</title>
+
+    <script src="vendors/angular.min.js"></script>
+    <script src="vendors/angular-route.min.js"></script>
+
+    <script src="scripts/app.module.js"></script>
+    <script src="scripts/app.config.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css" />
+    <base href="/" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1>Star Trek: The Next Generation</h1>
+        </div>
+        <a href="/picard" class="btn btn-danger btn-lg active" role="button">Picard</a>
+        <a href="/worf" class="btn btn-warning btn-lg active" role="button">Worf</a>
+        <a href="/data" class="btn btn-warning btn-lg active" role="button">Data</a>
+        <ng-view>
+        </ng-view>
+        <nav class="navbar navbar-default navbar-fixed-bottom">
+            <div class="container">
+                Laura Abend <span class="glyphicon glyphicon-star" aria-hidden="true"></span> 2016
+            </div>
+        </nav>
+    </div>
+</body>
+
+</html>
